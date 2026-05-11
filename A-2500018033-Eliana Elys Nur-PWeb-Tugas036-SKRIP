@@ -1,0 +1,44 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kombinasi Format Teks</title>
+</head>
+
+<body>
+
+    <h2>Kombinasi Format Teks Lain</h2>
+
+    <!-- Kombinasi berbeda urutan -->
+    <p><i><b>Teks Miring lalu Tebal</b></i></p>
+    <p><u><b>Teks Garis Bawah lalu Tebal</b></u></p>
+    <p><u><i>Teks Garis Bawah lalu Miring</i></u></p>
+
+    <!-- Kombinasi dengan tambahan teks -->
+    <p><b>Teks Tebal <i>di dalamnya ada miring</i></b></p>
+    <p><i>Teks Miring <u>di dalamnya ada garis bawah</u></i></p>
+    <p><u>Teks Garis Bawah <b>di dalamnya ada tebal</b></u></p>
+
+    <!-- kombinasi campuran -->
+    <p><b>Eliana <i>ELYS <u>nur</u></i></b></p>
+    <p><i><u>Semangat <b>ngoding</b></u></i></p>
+
+    <!-- kombinasi bertingkat -->
+    <p><b><i>Teks <u>kombinasi</u> bertingkat</i></b></p>
+
+    <!-- Tambahan kombinasi lainnya -->
+    <p><b><u><i>Belajar HTML itu menyenangkan!</i></u></b></p>
+
+    <p><u><i><b>Teknologi membuka banyak peluang</b></i></u></p>
+
+    <p><b><i><u>Teruslah berusaha dan jangan mudah menyerah</u></i></b></p>
+
+    <p><i>Fokus pada <b>tujuan</b>, nikmati setiap <u>proses</u></i></p>
+
+    <p><u>Eliana <i>Elys nur</i> adalah <b> wanita suksess</b></u></p>
+
+    <p><b>Mimpi besar <u>dimulai</u> dari <i>langkah kecil</i></b></p>
+
+</body>
+</html>
+```
