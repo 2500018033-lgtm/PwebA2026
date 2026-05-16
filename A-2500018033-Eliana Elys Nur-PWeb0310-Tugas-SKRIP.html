@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Tabel HTML</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 20px;
+        }
+
+        /* Mengatur judul tabel agar berada di tengah */
+        .judul-tabel {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 5px;
+            width: 100%;
+            max-width: 600px; /* Menyesuaikan lebar tabel */
+        }
+
+        /* Mengatur properti tabel agar memiliki bingkai ganda (border 3D klasik) */
+        table {
+            width: 100%;
+            max-width: 600px;
+            border: 3px double #888888;
+            border-collapse: separate;
+            border-spacing: 3px; /* Jarak antar sel pembentuk efek bingkai ganda */
+        }
+
+        /* Mengatur bagian kepala tabel (Header) */
+        th {
+            border: 1px solid #888888;
+            padding: 4px 10px;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        /* Mengatur sel isi tabel */
+        td {
+            border: 1px solid #888888;
+            padding: 4px 10px;
+            font-size: 16px;
+        }
+
+        /* Mengatur agar kolom NIM dan Kelas teksnya berada di tengah */
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="judul-tabel">Contoh Table</div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Nim</th>
+                <th>Kelas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Eliana Elys Nur</td>
+                <td class="text-center">2500018033</td>
+                <td class="text-center">A</td>
+            </tr>
+            <tr>
+                <td>Alfarina Chusnaini Nurlatifah</td>
+                <td class="text-center">2500018041</td>
+                <td class="text-center">A</td>
+            </tr>
+            <tr>
+                <td>Talitha Yamila</td>
+                <td class="text-center">2500018032</td>
+                <td class="text-center">A</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
