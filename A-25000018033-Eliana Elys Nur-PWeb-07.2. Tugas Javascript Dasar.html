@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Evaluasi Nilai Huruf</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container{
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h2{
+            color: #6b8f71;
+        }
+
+        input{
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            border: 2px solid #6b8f71;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+
+        button{
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 10px;
+            background-color: #6b8f71;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #88a98a;
+        }
+
+        .hasil{
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #3f4f44;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Evaluasi Nilai Huruf</h2>
+
+        <input type="number" id="nilai" placeholder="Masukkan nilai 0 - 100">
+
+        <button onclick="cekNilai()">
+            Cek Nilai
+        </button>
+
+        <div class="hasil" id="hasil">
+            Hasil akan tampil di sini
+        </div>
+
+    </div>
+
+    <script>
+
+        function cekNilai(){
+
+            var nilai = document.getElementById("nilai").value;
+
+            var huruf;
+
+            if(nilai >= 0 && nilai <= 20){
+                huruf = "E";
+            }
+
+            else if(nilai >= 21 && nilai <= 39){
+                huruf = "D";
+            }
+
+            else if(nilai >= 40 && nilai <= 64){
+                huruf = "C";
+            }
+
+            else if(nilai >= 65 && nilai <= 79){
+                huruf = "B";
+            }
+
+            else if(nilai >= 80 && nilai <= 100){
+                huruf = "A";
+            }
+
+            else{
+                huruf = "Nilai Tidak Valid";
+            }
+
+            document.getElementById("hasil").innerHTML =
+            "Nilai Angka : " + nilai + "<br>Nilai Huruf : " + huruf;
+
+        }
+
+    </script>
+
+</body>
+</html>
