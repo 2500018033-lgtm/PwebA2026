@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f9f6; 
+  margin: 10px;
+}
+
+.header {
+  background-color: #4a5d4e; 
+  color: white;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.column {
+  float: left;
+  padding: 40px 10px; 
+  height: 150px; 
+  width: 33.33%; 
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sage-medium-1 { background-color: #879883; color: white; }
+.sage-medium-2 { background-color: #92a48e; color: white; }
+.sage-medium-3 { background-color: #9cb098; color: white; }
+
+.sage-light-1 { background-color: #b2c0b0; color: #334231; }
+.sage-light-2 { background-color: #bdcbd9; color: #334231; } /* Sentuhan soft sage keabuan */
+.sage-light-3 { background-color: #c8d6c6; color: #334231; }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  margin-bottom: 15px;
+}
+
+.footer {
+  background-color: #627565; 
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Header</h2>
+</div>
+
+<div class="row">
+  <div class="column sage-medium-1">Baris 1 - Kolom 1</div>
+  <div class="column sage-medium-2">Baris 1 - Kolom 2</div>
+  <div class="column sage-medium-3">Baris 1 - Kolom 3</div>
+</div>
+
+<div class="row">
+  <div class="column sage-light-1">Baris 2 - Kolom 1</div>
+  <div class="column sage-light-2">Baris 2 - Kolom 2</div>
+  <div class="column sage-light-3">Baris 2 - Kolom 3</div>
+</div>
+
+<div class="footer">
+  <p>Footer - Hak Cipta &copy; 2026</p>
+</div>
+
+</body>
+</html>
